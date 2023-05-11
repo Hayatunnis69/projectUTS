@@ -1,6 +1,6 @@
 <?php 
-  $host = 'localhost:3307';
-  $db = 'db_toko_sembako';
+  $host = 'localhost';
+  $db = 'db_toko_sembako1';
   $user = 'root';
   $pass = '';
   $charset='utf8mb4';
