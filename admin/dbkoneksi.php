@@ -1,8 +1,8 @@
 <?php 
   $host = 'localhost';
-  $db = 'db_toko_sembako1';
+  $db = 'db_toko_sembako';
   $user = 'root';
-  $pass = '';
+  $pass = 'hayatunnisa04';
   $charset='utf8mb4';
 
   $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

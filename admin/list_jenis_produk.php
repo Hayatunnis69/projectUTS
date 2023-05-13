@@ -1,7 +1,7 @@
 <?php 
     require_once "layouts/header.php";
     require_once "layouts/menu.php";
-    require_once "dbkoneksi.php";
+    require_once 'dbkoneksi.php';
 ?>
 <?php 
    $sql = "SELECT * FROM jenis_produk";
