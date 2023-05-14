@@ -7,7 +7,7 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Pesanan</title>
+	<title>Detail Produk</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
@@ -58,13 +58,12 @@
 								</li>
 								<li><a href="about.html">About</a></li>
 									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
+										<li><a href="about.html">About</a></li>
+										<li><a href="cart.html">Cart</a></li>
 										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Detail Produk</a></li>
-										<li><a href="cart.html">Detail Pesanan</a></li>
+										<li><a href="shop.html">Shop</a></li>
 									</ul>
 								</li>
-								
 								<li><a href="shop.html">Shop</a>
 									<ul class="sub-menu">
 										<li><a href="shop.html">Shop</a></li>
@@ -74,10 +73,13 @@
 								<li>
 									<div class="header-icons">
 										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 									</div>
 								</li>
 							</ul>
 						</nav>
+						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						<div class="mobile-menu"></div>
 						<!-- menu end -->
 					</div>
 				</div>
@@ -94,7 +96,7 @@
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
 						<p>GROCERIES SHOP</p>
-						<h1>Produk Kami</h1>
+						<h1>Detail Produk</h1>
 					</div>
 				</div>
 			</div>
@@ -102,115 +104,33 @@
 	</div>
 	<!-- end breadcrumb section -->
 
-	<!-- products -->
-	<div class="product-section mt-150 mb-150">
+	<!-- single product -->
+	<div class="single-product mt-150 mb-150">
 		<div class="container">
-
 			<div class="row">
-                <div class="col-md-12">
-                    <div class="product-filters">
-                        <ul>
-                            <li class="active" data-filter="*">All</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-			<div class="row product-lists">
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/lays.jpg" alt=""></a>
-						</div>
-						<h3>Lays</h3>
-						<p class="product-price"><span>Per gr</span> 10000 </p>
-						<a href="single-product.html" class="cart-btn"></i> Detail Produk</a>
+				<div class="col-md-5">
+					<div class="single-product-img">
+						<img src="assets/img/products/gula.jpg" alt="">
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 text-center berry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product1.html"><img src="assets/img/products/teh.jpg" alt=""></a>
-						</div>
-						<h3>Teh Botol Sosro</h3>
-						<p class="product-price"><span>Per gr</span> 3000 </p>
-						<a href="single-product1.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center lemon">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product2.html"><img src="assets/img/products/beras.jpg" alt=""></a>
-						</div>
-						<h3>Beras Super</h3>
-						<p class="product-price"><span>Per 12 Kg</span> 60000 </p>
-						<a href="single-product2.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product3.html"><img src="assets/img/products/telur.jpg" alt=""></a>
-						</div>
-						<h3>Telur</h3>
-						<p class="product-price"><span>Per kg</span> 25000 </p>
-						<a href="single-product3.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product4.html"><img src="assets/img/products/susu.jpg" alt=""></a>
-						</div>
-						<h3>Susu Cair</h3>
-						<p class="product-price"><span>Per ml</span> 10000 </p>
-						<a href="single-product4.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product5.html"><img src="assets/img/products/minyak.jpg" alt=""></a>
-						</div>
-						<h3>Minyak</h3>
-						<p class="product-price"><span>Per liter</span> 17000 </p>
-						<a href="single-product5.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product6.html"><img src="assets/img/products/gula.jpg" alt=""></a>
-						</div>
+				<div class="col-md-7">
+					<div class="single-product-content">
 						<h3>Gula</h3>
-						<p class="product-price"><span>Per kg</span> 8000 </p>
-						<a href="single-product6.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product7.html"><img src="assets/img/products/garam.jpg" alt=""></a>
+						<p class="single-product-pricing"><span>Per 1 Kg</span> 8000</p>
+						<p>Gula dapat memberikan energi pada tubuh kita dan sebagai bahan penyedap pada makanan</p>
+						<div class="single-product-form">
+							
+							<a href="cart7.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Pesan</a>
+							<p><strong>Categories: </strong>Penyedap</p>
 						</div>
-						<h3>Garam</h3>
-						<p class="product-price"><span>Per gr</span> 5000 </p>
-						<a href="single-product7.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product8.html"><img src="assets/img/products/daging.jpg" alt=""></a>
-						</div>
-						<h3>Daging</h3>
-						<p class="product-price"><span>Per kg</span> 90000 </p>
-						<a href="single-product8.html" class="cart-btn"></i> Detail Produk</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end products -->
+	<!-- end single product -->
+
+	
 	
 	<!-- copyright -->
 	<div class="copyright">

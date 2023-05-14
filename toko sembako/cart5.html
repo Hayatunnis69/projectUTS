@@ -7,7 +7,7 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Pesanan</title>
+	<title>Cart</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
@@ -48,7 +48,14 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 text-center">
 					<div class="main-menu-wrap">
-						
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/logo.png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
@@ -58,10 +65,10 @@
 								</li>
 								<li><a href="about.html">About</a></li>
 									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Detail Produk</a></li>
+										<li><a href="about.html">About</a></li>
 										<li><a href="cart.html">Detail Pesanan</a></li>
+										<li><a href="checkout.html">Check Out</a></li>
+										<li><a href="shop.html">Shop</a></li>
 									</ul>
 								</li>
 								
@@ -78,6 +85,8 @@
 								</li>
 							</ul>
 						</nav>
+						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						<div class="mobile-menu"></div>
 						<!-- menu end -->
 					</div>
 				</div>
@@ -94,7 +103,7 @@
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
 						<p>GROCERIES SHOP</p>
-						<h1>Produk Kami</h1>
+						<h1>Detail Pesanan</h1>
 					</div>
 				</div>
 			</div>
@@ -102,115 +111,71 @@
 	</div>
 	<!-- end breadcrumb section -->
 
-	<!-- products -->
-	<div class="product-section mt-150 mb-150">
+	<!-- cart -->
+	<div class="cart-section mt-150 mb-150">
 		<div class="container">
-
 			<div class="row">
-                <div class="col-md-12">
-                    <div class="product-filters">
-                        <ul>
-                            <li class="active" data-filter="*">All</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+				<div class="col-lg-8 col-md-12">
+					<div class="cart-table-wrap">
+						<table class="cart-table">
+							<thead class="cart-table-head">
+								<tr class="table-head-row">
+									<th class="product-remove"></th>
+									<th class="product-image">Foto Produk</th>
+									<th class="product-name">Nama</th>
+									<th class="product-price">Harga</th>
+									<th class="product-jumlah">Jumlah</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="table-body-row">
+									<td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a></td>
+									<td class="product-image"><img src="assets/img/products/susu.jpg" alt=""></td>
+									<td class="product-name">Susu Cair</td>
+									<td class="product-price">10000</td>
+									<td class="product-jumlah">1 kotak</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
 
-			<div class="row product-lists">
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/lays.jpg" alt=""></a>
+				<div class="col-lg-4">
+					<div class="total-section">
+						<table class="total-table">
+							<thead class="total-table-head">
+								<tr class="table-total-row">
+									<th>Total</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="total-data">
+									<td><strong>Subtotal produk: </strong></td>
+									<td>10000</td>
+								</tr>
+								<tr class="total-data">
+									<td><strong>Biaya Pengiriman: </strong></td>
+									<td>3000</td>
+								</tr>
+								<tr class="total-data">
+									<td><strong>Total: </strong></td>
+									<td>13000</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="cart-buttons">
+							<a href="index.html" class="boxed-btn">Kembali</a>
+							<a href="and-page.html" class="boxed-btn black">Check Out</a>
 						</div>
-						<h3>Lays</h3>
-						<p class="product-price"><span>Per gr</span> 10000 </p>
-						<a href="single-product.html" class="cart-btn"></i> Detail Produk</a>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center berry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product1.html"><img src="assets/img/products/teh.jpg" alt=""></a>
-						</div>
-						<h3>Teh Botol Sosro</h3>
-						<p class="product-price"><span>Per gr</span> 3000 </p>
-						<a href="single-product1.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center lemon">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product2.html"><img src="assets/img/products/beras.jpg" alt=""></a>
-						</div>
-						<h3>Beras Super</h3>
-						<p class="product-price"><span>Per 12 Kg</span> 60000 </p>
-						<a href="single-product2.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product3.html"><img src="assets/img/products/telur.jpg" alt=""></a>
-						</div>
-						<h3>Telur</h3>
-						<p class="product-price"><span>Per kg</span> 25000 </p>
-						<a href="single-product3.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product4.html"><img src="assets/img/products/susu.jpg" alt=""></a>
-						</div>
-						<h3>Susu Cair</h3>
-						<p class="product-price"><span>Per ml</span> 10000 </p>
-						<a href="single-product4.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product5.html"><img src="assets/img/products/minyak.jpg" alt=""></a>
-						</div>
-						<h3>Minyak</h3>
-						<p class="product-price"><span>Per liter</span> 17000 </p>
-						<a href="single-product5.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product6.html"><img src="assets/img/products/gula.jpg" alt=""></a>
-						</div>
-						<h3>Gula</h3>
-						<p class="product-price"><span>Per kg</span> 8000 </p>
-						<a href="single-product6.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product7.html"><img src="assets/img/products/garam.jpg" alt=""></a>
-						</div>
-						<h3>Garam</h3>
-						<p class="product-price"><span>Per gr</span> 5000 </p>
-						<a href="single-product7.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center strawberry">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product8.html"><img src="assets/img/products/daging.jpg" alt=""></a>
-						</div>
-						<h3>Daging</h3>
-						<p class="product-price"><span>Per kg</span> 90000 </p>
-						<a href="single-product8.html" class="cart-btn"></i> Detail Produk</a>
-					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end products -->
+	<!-- end cart -->
 	
 	<!-- copyright -->
 	<div class="copyright">
